@@ -1,4 +1,14 @@
 /* Your Code Here */
+function createEmployeeRecord(firstName, familyName, title, payPerHour){
+  return {
+    firstName: firstName,
+    familyName: familyName,
+    title: title,
+    payPerHour: payPerHour,
+    timeInEvents:[],
+    timeOutEvents:[]
+  }
+}
 
 /*
  We're giving you this function. Take a look at it, you might see some usage
