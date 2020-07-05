@@ -1,10 +1,10 @@
 /* Your Code Here */
-function createEmployeeRecord(firstName, familyName, title, payPerHour){
+function createEmployeeRecord(emp){
   return {
-    firstName: firstName,
-    familyName: familyName,
-    title: title,
-    payPerHour: payPerHour,
+    firstName: emp[0],
+    familyName: emp[1],
+    title: emp[2],
+    payPerHour: emp[3],
     timeInEvents:[],
     timeOutEvents:[]
   }
