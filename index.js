@@ -37,7 +37,10 @@ function hoursWorkedOnDate(date){
   const timeOut = this.timeOutEvents.find(event => event.date === date);
   return (timeOut.hour - timeIn.hour)/100 ;
 }
-
+function wagesEarnedOnDate(date){
+  let pay = hoursWorkedOnDate.call(this, date) * this.payPerHour; 
+  return parseFloat(pay.toString())
+}
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
