@@ -9,6 +9,9 @@ function createEmployeeRecord(firstName, familyName, title, payPerHour){
     timeOutEvents:[]
   }
 }
+function createEmployeeRecords(empRows){
+  return empRows.map(emp => createEmployeeRecord(emp))
+}
 
 /*
  We're giving you this function. Take a look at it, you might see some usage
