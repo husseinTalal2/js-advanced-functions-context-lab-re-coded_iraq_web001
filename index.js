@@ -13,6 +13,26 @@ function createEmployeeRecords(empRows){
   return empRows.map(emp => createEmployeeRecord(emp))
 }
 
+function createTimeInEvent(dateStamp){
+  const [date, hour] = dateStamp.split(" ");
+  this.timeInEvents.push({
+    type:"TimeIn",
+    hour: parseInt(hour, 10),
+    date
+  });
+  return this;
+}
+function createTimeOutEvent(dateStamp){
+  const [date, hour] = dateStamp.split(" ");
+  this.timeOutEvents.push({
+    type:"TimeOut",
+    hour: parseInt(hour, 10),
+    date
+  });
+  return this;
+}
+
+
 /*
  We're giving you this function. Take a look at it, you might see some usage
  that's new and different. That's because we're avoiding a well-known, but
