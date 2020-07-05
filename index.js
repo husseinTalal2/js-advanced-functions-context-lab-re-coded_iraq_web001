@@ -38,7 +38,7 @@ function hoursWorkedOnDate(date){
   return (timeOut.hour - timeIn.hour)/100 ;
 }
 function wagesEarnedOnDate(date){
-  let pay = hoursWorkedOnDate.call(this, date) * this.payPerHour; 
+  let pay = hoursWorkedOnDate.call(this, date) * this.payPerHour;
   return parseFloat(pay.toString())
 }
 /*
