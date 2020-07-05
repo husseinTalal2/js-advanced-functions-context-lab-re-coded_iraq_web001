@@ -32,6 +32,11 @@ function createTimeOutEvent(dateStamp){
   return this;
 }
 
+function hoursWorkedOnDate(date){
+  const timeIn = this.timeInEvents.find(event => event.date === date);
+  const timeOut = this.timeOutEvents.find(event => event.date === date);
+  return (timeOut.hour - timeIn.hour)/100 ;
+}
 
 /*
  We're giving you this function. Take a look at it, you might see some usage
